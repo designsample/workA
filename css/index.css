@@ -1,1 +1,8 @@
+@charset "UTF-8";
 /*首頁*/
+#index{
+	height: 100vh;
+	background: url(../img/bg-index.png),url(../img/bg-pattern.png);
+	background-repeat: no-repeat,repeat;
+	background-position: left top, left top; 
+}
