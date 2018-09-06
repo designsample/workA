@@ -6,6 +6,11 @@
 	background-repeat: repeat;
 	background-position: left top; 
 }
+.column-index{
+	border-radius: 5px;
+	background: rgba(255,255,255,0.6);
+
+}
 @media screen and (max-width: 767px) {
 
 }
@@ -17,5 +22,5 @@
 	min-height: 100vh;
 	background: url(../img/bg-index.png),url(../img/bg-pattern.png);
 	background-repeat: no-repeat,repeat;
-	background-position: calc( 50vw - 680px) 0, left top;
+	background-position: calc( 50vw - 680px) -30px, left top;
 }
