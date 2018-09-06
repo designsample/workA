@@ -10,6 +10,9 @@
 
 
 /*導覽列*/
+.container-CSD{
+    width: 100%;
+}
 .navbar{
 	margin-bottom: 0;
 }
@@ -20,9 +23,11 @@
     margin-top: 12px;
     padding-bottom: 4px;
 }
-
+.font-sizeGroup{
+    padding-top: 40%;
+}
 /*功能性按鈕*/
-#openBtnSmallLeft{
+/*#openBtnSmallLeft{
 	display: none;
 	position: fixed;
     background: #ffffffa6;
@@ -32,7 +37,24 @@
     cursor: pointer;
     top: 20px;
     left: 0;
-}
+}*/
+#openBtnSmallLeft{
+    display: none;
+    position: fixed;
+    background: #ecf0f1dd;
+    padding: 20px 15px;
+    border-radius: 0 5px 5px 0;
+    z-index: 20;
+    cursor: pointer;
+    top: 100px;
+    width: 50px;
+    left: 0px;
+    animation-name: CC;
+    animation-duration:1.5s;
+    animation-fill-mode:forwards;
+    animation-delay:0.5s;
+} 
+
 #openBtnSmallLeft>span{
 	display: block;
 	text-align: center;
@@ -40,9 +62,14 @@
 #openBtnSmallLeft:hover,#openBtnSmallLeft:focus,#openBtnSmallLeft:active{
 	background: #ffffff;
 	box-sizing: border-box;
-
+    cursor: pointer;
+    z-index: 20;
 	box-shadow: 1px 2px 5px 0px #dadada;
-
+    top: 100px;
+    width: 50px;
+    left: 0px;
+    animation-name: easeInHover;
+    animation-duration:0.5s;
 }
 .sectionMain{
     overflow: hidden;
@@ -52,6 +79,33 @@
 }
 #mySidenav ul.tab-side{
     padding-bottom: calc( 100vh - 520px ); 
+}
+@keyframes CC {
+  0% {
+    left: 0px;
+    background: #ecf0f1dd;
+    box-shadow: 1px 2px 5px 0px rgba(218, 218, 218, 0.3);
+
+  }
+  100%{
+    left: -33px;
+    background: #ecf0f1dd;
+    box-shadow: 1px 2px 5px 0px #dadada;
+  }
+}
+@keyframes easeInHover {
+  from {
+    left: -20px;
+    background: #ecf0f1dd;
+    box-shadow: 1px 2px 5px 0px rgba(218, 218, 218, 0.3);
+
+  }
+  to {
+    left: 0px;
+    background: #ffffff;
+    box-shadow: 1px 2px 5px 0px #dadada;
+
+  }
 }
 
 /*[設定]元件----------*/
@@ -296,6 +350,10 @@ margin-bottom: 0;
     /*border-bottom: 1px solid #ecf0f1;*/
     border-bottom: 1px solid #94a5a6;
 }
+.bt{
+    /*border-bottom: 1px solid #ecf0f1;*/
+    border-top: 1px solid #94a5a6;
+}
 
 
 
@@ -371,6 +429,11 @@ margin-bottom: 0;
     .main-menu li>a{
     	line-height: 24px;
     	vertical-align: middle;
+    }
+    .font-sizeGroup{
+        padding-top:0;
+        padding: 10px 15px;
+        text-align: center;
     }
     #mySidenav,#mySidenavRight{
         padding-bottom: 0;
