@@ -1,8 +1,21 @@
 @charset "UTF-8";
 /*首頁*/
 #index{
-	height: 100vh;
+	min-height: 100vh;
+	background: url(../img/bg-pattern.png);
+	background-repeat: repeat;
+	background-position: left top; 
+}
+@media screen and (max-width: 767px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 1200px) {
+	#index{
+	min-height: 100vh;
 	background: url(../img/bg-index.png),url(../img/bg-pattern.png);
 	background-repeat: no-repeat,repeat;
-	background-position: left top, left top; 
+	background-position: calc( 50vw - 680px) 0, left top;
 }
