@@ -108,7 +108,18 @@
     border-radius: 50%;
     border: 2px solid #fff;
 }
-
+.img-searchCommittee .thumbnail {
+    height: 320px;
+    overflow: hidden;
+    position: inherit;
+}
+.img-searchCommittee .thumbnail .caption{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
 .sidenav .media-left a,
 .sidenav .media-right a {
     padding: 0;
@@ -130,6 +141,19 @@
     height: 15em;
     overflow-y: scroll;
 }
+.panel-issueareaLg{
+
+}
+.panel-issueareaLg .panel-bodyScrollY{
+    border-left: 1px solid #ecf0f1;
+    border-right: 1px solid #ecf0f1;
+    overflow-y: hidden;
+}
+.panel-issueareaLg .panel-footer{
+    background-color: none;
+    border: 1px solid #ecf0f1;
+}
+
 .panel-doubleCollapse .list-group .list-group-item .panel-group{
 margin-bottom: 0;
 }
@@ -225,10 +249,14 @@ margin-bottom: 0;
     padding-right: 10px;
 }
 .ph-20{
-	padding: 20px auto;
+	padding-top: 20px;
+    padding-bottom: 20px;
 }
 .pt-20{
     padding-top: 20px;
+}
+.pb-20{
+    padding-bottom: 20px;
 }
 
 .m-0 {
@@ -263,6 +291,10 @@ margin-bottom: 0;
 
 .mb-40 {
     margin-bottom: 40px;
+}
+.bb{
+    /*border-bottom: 1px solid #ecf0f1;*/
+    border-bottom: 1px solid #94a5a6;
 }
 
 
