@@ -302,6 +302,10 @@ margin-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
 }
+.ph-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .ph-20{
 	padding-top: 20px;
     padding-bottom: 20px;
