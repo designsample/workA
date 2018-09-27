@@ -288,8 +288,12 @@ margin-bottom: 0;
     font-size: 13px !important;
     margin: 0;
 }
-
-
+.bg-header{
+    background: rgba(0, 0, 0, 0.02);
+}
+.bg-light{
+    background: #ecf0f1 !important;
+}
 /*[設定]功能----------*/
 
 .inline-block {
@@ -311,25 +315,30 @@ margin-bottom: 0;
 .p-hr {
     padding: 1em 0;
 }
-
-.ph-6 {
-    padding: 6px 0;
-}
-
 .p-0 {
     padding: 0 !important;
 }
-.pv-10{
-    padding-left: 10px;
-    padding-right: 10px;
+.pv-6 {
+    padding: 6px 0;
 }
-.ph-10{
+.pv-10{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.ph-20{
+.pv-20{
 	padding-top: 20px;
     padding-bottom: 20px;
+}
+.ph-5{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.ph-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pt-10{
+    padding-top: 10px;
 }
 .pt-20{
     padding-top: 20px;
@@ -346,11 +355,11 @@ margin-bottom: 0;
     margin: 10px auto;
 }
 
-.mh-30 {
+.mv-30 {
     margin-top:30px;
     margin-bottom:30px;
 }
-.mh-50 {
+.mv-50 {
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -384,7 +393,9 @@ margin-bottom: 0;
     /*border-bottom: 1px solid #ecf0f1;*/
     border-top: 1px solid #94a5a6;
 }
-
+.text-decoration-0{
+    text-decoration: none;
+}
 
 
 
@@ -609,3 +620,8 @@ margin-bottom: 0;
         }
         
     }
+
+.rwd-table tr > th > a.glyphicon{
+    text-decoration: none;
+
+}
