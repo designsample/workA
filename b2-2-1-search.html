@@ -60,15 +60,17 @@
                             <li><a href="">成果分析 Analysis</a></li>
                             <li><a href="">產業應用 Application</a></li>
                             <li><a href="">廠商專區 Company</a></li>
+                            
                         </ul>
                     </li>
-                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li> -->
+                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li> -->     
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>平台介紹<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="">操作手冊</a></li>
+                            
                         </ul>
-                    </li>
+                    </li>               
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>後台管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -78,16 +80,16 @@
                     </li>
                     <li>
                         <div class="btn-group btn-group-toggle font-sizeGroup" data-toggle="buttons">
-                            <label class="btn btn-success btn-sm">
-                                <input type="radio" name="options" id="option1" autocomplete="off">大
-                            </label>
-                            <label class="btn btn-success active btn-sm">
-                                <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">中
-                            </label>
-                            <label class="btn btn-success btn-sm">
-                                <input type="radio" name="options" id="option3" autocomplete="off">小
-                            </label>
-                        </div>
+                        <label class="btn btn-success btn-sm">
+                            <input type="radio" name="options" id="option1" autocomplete="off">大
+                        </label>
+                        <label class="btn btn-success active btn-sm">
+                            <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">中
+                        </label>
+                        <label class="btn btn-success btn-sm">
+                            <input type="radio" name="options" id="option3" autocomplete="off">小
+                        </label>
+                    </div>
                     </li>
                     <!-- <li class="dropdown">   
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-eye-open">&ensp;</span>大項次 
@@ -158,6 +160,7 @@
                 </ul>
             </div>
             <div id="mySidenavRight" class="col-xs-12 col-sm-9">
+                <!-- Nav tabs -->
                 <ul class="nav nav-tabs pt-10" role="tablist">
                     <li role="presentation" class="active"><a href="#search" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">議題查詢&nbsp;Search</a></li>
                 </ul>
@@ -183,54 +186,6 @@
                                                 <option value="105">105</option>
                                                 <option value="106" selected="selected">106</option>
                                             </select>
-                                            <!-- <label class="">/</label>
-                                                <select title="monthA" class="from-control">
-                                                    <option value="1" selected="selected">1&emsp;</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                </select>
-                                                <label class="">/</label>
-                                                <select id="day" class="from-control">
-                                                    <option value="1" selected="selected">1&emsp;</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="21">21</option>
-                                                    <option value="22">22</option>
-                                                    <option value="23">23</option>
-                                                    <option value="24">24</option>
-                                                    <option value="25">25</option>
-                                                    <option value="26">26</option>
-                                                    <option value="27">27</option>
-                                                    <option value="28">28</option>
-                                                    <option value="29">29</option>
-                                                    <option value="30">30</option>
-                                                </select> -->
                                             <div class="form-inline inline-block text-center col-xs-12 col-md-2">
                                                 <label class="">~</label>
                                             </div>
@@ -249,58 +204,300 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <!-- 
-                                            <div class="form-group">
-                                                <label for="year" class="control-label">議題年度</label>
-                                                <div class="">
-                                                    <input type="text" name="" class="from-control">
-                                                </div>
-                                            </div> -->
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group col-xs-12 p-0">
-                                        <label for="keyWords" class="control-label col-xs-4 col-md-2 p-0">查詢字串</label>
+                                        <label for="searchWords" class="control-label col-xs-4 col-md-2 p-0">查詢字串</label>
                                         <div class="form-inline inline-block col-xs-8 col-md-10">
-                                            <input type="text" id="keywords" name="" class="from-control col-xs-12">
+                                            <input type="text" id="searchWords" name="" class="from-control col-xs-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="issue" class="control-label col-xs-4 col-md-2 p-0">議題</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <input type="text" id="issue" name="" class="from-control col-xs-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="reply" class="control-label col-xs-4 col-md-2 p-0">回覆</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <input type="text" id="reply" name="" class="from-control col-xs-12">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="department" class="control-label col-xs-4 col-md-2 p-0">提案單位</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select id="department" title="department" class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="立院黨團提案">立院黨團提案</option>
+                                                <option value="委員會提案">委員會提案</option>
+                                                <option value="委員提案">委員提案</option>
+                                                <option value="監察院">監察院</option>
+                                                <option value="立法院預算中心">立法院預算中心</option>
+                                                <option value="其他">其他</option>
+                                                <option value="無">無</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="year" class="control-label col-xs-4 col-md-2 p-0">提案委員</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="吳思瑤">吳思瑤</option>
+                                                <option value="姚文智">姚文智</option>
+                                                <option value="蔣萬安">蔣萬安</option>
+                                                <option value="李彥秀">李彥秀</option>
+                                                <option value="林昶佐">林昶佐</option>
+                                                <option value="蔣乃辛">蔣乃辛</option>
+                                                <option value="費鴻泰">費鴻泰</option>
+                                                <option value="賴士葆">賴士葆</option>
+                                                <option value="呂孫綾">呂孫綾</option>
+                                                <option value="林淑芬">林淑芬</option>
+                                                <option value="高志鵬">高志鵬</option>
+                                                <option value="吳秉叡">吳秉叡</option>
+                                                <option value="蘇巧慧">蘇巧慧</option>
+                                                <option value="張宏陸">張宏陸</option>
+                                                <option value="羅致政">羅致政</option>
+                                                <option value="江永昌">江永昌</option>
+                                                <option value="林德福">林德福</option>
+                                                <option value="吳琪銘">吳琪銘</option>
+                                                <option value="羅明才">羅明才</option>
+                                                <option value="黃國昌">黃國昌</option>
+                                                <option value="蔡適應">蔡適應</option>
+                                                <option value="鄭運鵬">鄭運鵬</option>
+                                                <option value="陳賴素美">陳賴素美</option>
+                                                <option value="陳學聖">陳學聖</option>
+                                                <option value="鄭寶清">鄭寶清</option>
+                                                <option value="呂玉玲">呂玉玲</option>
+                                                <option value="趙正宇">趙正宇</option>
+                                                <option value="林為洲">林為洲</option>
+                                                <option value="柯建銘">柯建銘</option>
+                                                <option value="陳超明">陳超明</option>
+                                                <option value="徐志榮">徐志榮</option>
+                                                <option value="蔡其昌">蔡其昌</option>
+                                                <option value="顏寬恆">顏寬恆</option>
+                                                <option value="洪慈庸">洪慈庸</option>
+                                                <option value="張廖萬堅">張廖萬堅</option>
+                                                <option value="盧秀燕">盧秀燕</option>
+                                                <option value="黃國書">黃國書</option>
+                                                <option value="何欣純">何欣純</option>
+                                                <option value="江啟臣">江啟臣</option>
+                                                <option value="王惠美">王惠美</option>
+                                                <option value="黃秀芳">黃秀芳</option>
+                                                <option value="洪宗熠">洪宗熠</option>
+                                                <option value="陳素月">陳素月</option>
+                                                <option value="馬文君">馬文君</option>
+                                                <option value="許淑華">許淑華</option>
+                                                <option value="蘇治芬">蘇治芬</option>
+                                                <option value="劉建國">劉建國</option>
+                                                <option value="蔡易餘">蔡易餘</option>
+                                                <option value="陳明文">陳明文</option>
+                                                <option value="李俊俋">李俊俋</option>
+                                                <option value="葉宜津">葉宜津</option>
+                                                <option value="黃偉哲">黃偉哲</option>
+                                                <option value="陳亭妃">陳亭妃</option>
+                                                <option value="林俊憲">林俊憲</option>
+                                                <option value="王定宇">王定宇</option>
+                                                <option value="邱議瑩">邱議瑩</option>
+                                                <option value="邱志偉">邱志偉</option>
+                                                <option value="劉世芳">劉世芳</option>
+                                                <option value="林岱樺">林岱樺</option>
+                                                <option value="管碧玲">管碧玲</option>
+                                                <option value="李昆澤">李昆澤</option>
+                                                <option value="趙天麟">趙天麟</option>
+                                                <option value="許智傑">許智傑</option>
+                                                <option value="賴瑞隆">賴瑞隆</option>
+                                                <option value="蘇震清">蘇震清</option>
+                                                <option value="鍾佳濱">鍾佳濱</option>
+                                                <option value="莊瑞雄">莊瑞雄</option>
+                                                <option value="陳歐珀">陳歐珀</option>
+                                                <option value="蕭美琴">蕭美琴</option>
+                                                <option value="劉櫂豪">劉櫂豪</option>
+                                                <option value="楊曜">楊曜</option>
+                                                <option value="楊鎮浯">楊鎮浯</option>
+                                                <option value="陳雪生">陳雪生</option>
+                                                <option value="吳焜裕">吳焜裕</option>
+                                                <option value="吳玉琴">吳玉琴</option>
+                                                <option value="陳曼麗">陳曼麗</option>
+                                                <option value="蔡培慧">蔡培慧</option>
+                                                <option value="王榮璋">王榮璋</option>
+                                                <option value="余宛如">余宛如</option>
+                                                <option value="蘇嘉全">蘇嘉全</option>
+                                                <option value="段宜康">段宜康</option>
+                                                <option value="陳其邁">陳其邁</option>
+                                                <option value="尤美女">尤美女</option>
+                                                <option value="鍾孔炤">鍾孔炤</option>
+                                                <option value="林靜儀">林靜儀</option>
+                                                <option value="周春米">周春米</option>
+                                                <option value="施義芳">施義芳</option>
+                                                <option value="李麗芬">李麗芬</option>
+                                                <option value="郭正亮">郭正亮</option>
+                                                <option value="邱泰源">邱泰源</option>
+                                                <option value="蔣絜安">蔣絜安</option>
+                                                <option value="王金平">王金平</option>
+                                                <option value="柯志恩">柯志恩</option>
+                                                <option value="陳宜民">陳宜民</option>
+                                                <option value="林麗蟬">林麗蟬</option>
+                                                <option value="許毓仁">許毓仁</option>
+                                                <option value="曾銘宗">曾銘宗</option>
+                                                <option value="黃昭順">黃昭順</option>
+                                                <option value="吳志揚">吳志揚</option>
+                                                <option value="張麗善">張麗善</option>
+                                                <option value="徐榛蔚">徐榛蔚</option>
+                                                <option value="王育敏">王育敏</option>
+                                                <option value="李鴻鈞">李鴻鈞</option>
+                                                <option value="陳怡潔">陳怡潔</option>
+                                                <option value="周陳秀霞">周陳秀霞</option>
+                                                <option value="高潞．以用．巴魕剌">高潞．以用．巴魕剌</option>
+                                                <option value="徐永明">徐永明</option>
+                                                <option value="鄭天財">鄭天財</option>
+                                                <option value="廖國棟">廖國棟</option>
+                                                <option value="陳瑩">陳瑩</option>
+                                                <option value="高金素梅">高金素梅</option>
+                                                <option value="簡東明">簡東明</option>
+                                                <option value="孔文吉">孔文吉</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="issueType" class="control-label col-xs-4 col-md-2 p-0">議題類別</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select id="issueType" title="issueType" class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="國會輿情">國會輿情</option>
+                                                <option value="臨時增列題庫">臨時增列題庫</option>
+                                                <option value="立法院模擬題庫">立法院模擬題庫</option>
+                                                <option value="部次長承諾事項">部次長承諾事項</option>
+                                                <option value="委員會臨時提案">委員會臨時提案</option>
+                                                <option value="立法委員請託事項">立法委員請託事項</option>
+                                                <option value="立法委員洽索資料">立法委員洽索資料</option>
+                                                <option value="預算相關議題">預算相關議題</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="ImplementedBy" class="control-label col-xs-4 col-md-2 p-0">承辦科別</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select id="ImplementedBy" title="ImplementedBy" class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="科部甲">科部甲</option>
+                                                <option value="科部乙">科部乙</option>
+                                                <option value="科部丙">科部丙</option>
+                                                <option value="科部丁">科部丁</option>
+                                                <option value="科部戊">科部戊</option>
+                                                <option value="科部己">科部己</option>
+                                                <option value="科部庚">科部庚</option>
+                                                <option value="科部辛">科部辛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="ImplementedByWho" class="control-label col-xs-4 col-md-2 p-0">承辦人員</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select id="ImplementedByWho" title="ImplementedByWho" class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="科部甲">人員甲</option>
+                                                <option value="科部乙">人員乙</option>
+                                                <option value="科部丙">人員丙</option>
+                                                <option value="科部丁">人員丁</option>
+                                                <option value="科部戊">人員戊</option>
+                                                <option value="科部己">人員己</option>
+                                                <option value="科部庚">人員庚</option>
+                                                <option value="科部辛">人員辛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="focus" class="control-label col-xs-4 col-md-2 p-0">關注重點</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <select id="focus" title="focus" class="from-control col-xs-12">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="科部甲">重點甲</option>
+                                                <option value="科部乙">重點乙</option>
+                                                <option value="科部丙">重點丙</option>
+                                                <option value="科部丁">重點丁</option>
+                                                <option value="科部戊">重點戊</option>
+                                                <option value="科部己">重點己</option>
+                                                <option value="科部庚">重點庚</option>
+                                                <option value="科部辛">重點辛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="keyWords" class="control-label col-xs-4 col-md-2 p-0">關鍵字</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <input type="text" id="keyWords" name="" class="from-control col-xs-12">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12">
-                                    <a href="b2-2-search.html" role="button" class="btn btn-info pull-right">進階查詢</a>
-                                    <a href="b2-1-1-search.html" class="btn btn-info pull-right mr-10" role="button">查詢</a>
+                                    <a href="b2-1-search.html" role="button" class="btn btn-info pull-right">簡易查詢</a>
+                                    <a href="#searchResault" class="btn btn-info pull-right mr-10" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResault" onclick="closeArea()">查詢</a>
                                 </div>
                             </div>
                         </div>
-                        <!-- / row -->
+                        <!-- / row 檢索區 -->
                         <div class="row">
                             <div class="collapse" id="searchResault">
-                                <div class="col-xs-12 pv-20 bt">
-                                    <div class="col-xs-12 col-sm-3">
-                                        <p class="h5 inline-block">查詢結果：</p>
-                                        <p class="h5 inline-block">1234</p>
-                                        <p class="h5 inline-block">筆</p>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-9">
-                                        <div class="btn-group pull-right" role="group" aria-label="First group">
-                                            <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                            <button type="button" class="btn btn-default btn-sm">1</button>
-                                            <button type="button" class="btn btn-default btn-sm">2</button>
-                                            <button type="button" class="btn btn-default btn-sm">3</button>
-                                            <button type="button" class="btn btn-default btn-sm">4</button>
-                                            <button type="button" class="btn btn-default btn-sm">&#10095;</button>
+                                <div class="col-xs-12 pt-20 bt">
+                                    <div class="col-xs-12 bg-light pv-10">
+                                        <div class="pull-left">
+                                            <div class="btn-group btn-group-xs" role="group" aria-label="First group">
+                                                <button type="button" class="btn btn-default">&#xFFDC;&#10094;</button>
+                                                <button type="button" class="btn btn-default">&#10094;</button>
+                                                <button type="button" class="btn btn-default active">1</button>
+                                                <button type="button" class="btn btn-default">2</button>
+                                                <button type="button" class="btn btn-default">3</button>
+                                                <button type="button" class="btn btn-default">4</button>
+                                                <button type="button" class="btn btn-default">&#10095;</button>
+                                                <button type="button" class="btn btn-default">&#10095;&#xFFDC;</button>
+                                            </div>
+                                        </div>
+                                        <div class="pull-right">
+                                            <p class="inline-block m-0">跳至頁數：</p>
+                                            <input type="text" id="keyWords" name="" class="from-control" placeholder="1" style="width:4em;line-height: 1">
+                                            <p class="inline-block m-0">/124 頁</p>
+                                            <a href="b2-1-1-1-search.html" class="btn btn-xs btn-info mr-10" role="button">跳頁</a> &nbsp;
+                                            <p class="inline-block m-0">每頁顯示：</p>
+                                            <select id="itemperPage" title="itemperPage" class="from-control">
+                                                <option value="10" selected="selected">10</option>
+                                                <option value="30">30</option>
+                                                <option value="50">50</option>
+                                                <option value="100">100</option>
+                                            </select>
+                                            <p class="inline-block m-0">筆</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- / 控制選項 -->
+                                <!-- / 表格控制選項 -->
                                 <!-- 表格開始 -->
                                 <div class="col-xs-12">
                                     <table class="rwd-table">
                                         <tr>
                                             <th>年度<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                            <th>議題說明</th>
-                                            <th>議題類別</th>
-                                            <th>提案單位</th>
-                                            <th>提案人</th>
+                                            <th>議題說明<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                            <th>議題類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                            <th>提案單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                            <th>提案人<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
                                         </tr>
                                         <tr>
                                             <td aria-label="年度" data-th="年度">100</td>
@@ -366,65 +563,6 @@
                         <!-- / row結果呈現區的 -->
                         <div class="row" id="issueArea">
                             <div class="col-xs-12 hidden-xs panel-issueareaLg pt-20">
-                                <div class="panel-group col-xs-12 col-md-6 col-lg-4 b-0 bs-0" id="accordion" role="tablist" aria-multiselectable="true">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    Collapsible Group Item #1
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                <ul class="list-group mb-10">
-                                                    <li class="list-group-item">
-                                                        <a href="" title="">1.1&ensp;107年度技術處預算編列及分配情形</a>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <a href="" title="">2.1&ensp;我國產業科技發展政策及技術處施政重點</a>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <a href="" title="">2.2&ensp;研究機構財團法人從事兩岸產業合作注意事項</a>
-                                                    </li>
-                                        
-                                                </ul>
-                                                <div class="col-xs-12 text-center p-0"><a href="" title="" class="h6 ">看更多</a></div>
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                    Collapsible Group Item #2
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                啊啊啊啊
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingThree">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                    Collapsible Group Item #3
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                                            <div class="panel-body">
-                                                啊啊啊啊
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
                                 <div class="panel panel-default col-xs-12 col-md-6 col-lg-4 b-0 bs-0">
                                     <div class="panel-heading" role="button">
                                         <h4 class="panel-title h4">
@@ -436,25 +574,25 @@
                                     <div class="panel-collapse panel-bodyScrollY" role="tabpanel">
                                         <ul class=list-group>
                                             <li class="list-group-item">
-                                                <a href="" title="">1.1&ensp;107年度技術處預算編列及分配情形</a>
+                                                <a href="b2-1-2-searchResault.html" title="">1.1&ensp;107年度技術處預算編列及分配情形</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.1&ensp;我國產業科技發展政策及技術處施政重點</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.1&ensp;我國產業科技發展政策及技術處施政重點</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.2&ensp;研究機構財團法人從事兩岸產業合作注意事項</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.2&ensp;研究機構財團法人從事兩岸產業合作注意事項</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.3&ensp;經濟部中台灣創新園區後續營運規劃與策略</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.3&ensp;經濟部中台灣創新園區後續營運規劃與策略</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.4&ensp;嘉義產業創新研發中心推動現況</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.4&ensp;嘉義產業創新研發中心推動現況</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.5&ensp;鏈結矽谷創新創業「臺灣創新快製媒合中心(TRIPLE)」建置規劃</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.5&ensp;鏈結矽谷創新創業「臺灣創新快製媒合中心(TRIPLE)」建置規劃</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.6&ensp;新經濟發展模式下我國未來產業創新研發策略</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.6&ensp;新經濟發展模式下我國未來產業創新研發策略</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -475,22 +613,22 @@
                                     <div class="panel-collapse panel-bodyScrollY" role="tabpanel">
                                         <ul class=list-group>
                                             <li class="list-group-item">
-                                                <a href="" title="">1.1&ensp;經濟部推動法人革新之策略與作法</a>
+                                                <a href="b2-1-2-searchResault.html" title="">1.1&ensp;經濟部推動法人革新之策略與作法</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">1.2&ensp;經濟部中台灣創新園區後續營運規劃與策略</a>
+                                                <a href="b2-1-2-searchResault.html" title="">1.2&ensp;經濟部中台灣創新園區後續營運規劃與策略</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">1.3&ensp;科技專案協助中小企業輔導成果</a>
+                                                <a href="b2-1-2-searchResault.html" title="">1.3&ensp;科技專案協助中小企業輔導成果</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">1.4&ensp;財訊「資策會近親繁殖、狂接政府標案」說明</a>
+                                                <a href="b2-1-2-searchResault.html" title="">1.4&ensp;財訊「資策會近親繁殖、狂接政府標案」說明</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.1&ensp;科技專案執行單位之遴選及退場機制</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.1&ensp;科技專案執行單位之遴選及退場機制</a>
                                             </li>
                                             <li class="list-group-item">
-                                                <a href="" title="">2.2&ensp;105年度科技專案執行成果之運用說明</a>
+                                                <a href="b2-1-2-searchResault.html" title="">2.2&ensp;105年度科技專案執行成果之運用說明</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -826,13 +964,13 @@
                     <!-- / tabpanel -->
                 </div>
             </div>
+        </div>
     </section>
     <footer class="navbar">
         <div class="container container-CSD">
             <h4>法人科專資訊整合平台</h4>
             <a href="">聯絡我們</a> ｜ <a href="">技術支援</a> ｜ <a href="">隱私權</a>
-            <a title="回頂端按鈕" onclick="topFunction()" id="goTop" href="">
-                <div class="glyphicon glyphicon-triangle-top"></div>Top</a>
+            <a title="回頂端按鈕" onclick="topFunction()" id="goTop" href=""><div class="glyphicon glyphicon-triangle-top"></div>Top</a>
             <a id="openBtnSmallLeft" class="closebtn hidden-xs" href="javascript:void(0)" onclick="openNav()"><span class="glyphicon glyphicon-arrow-right"></span>打開側邊欄</a>
             <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;close</a>
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
@@ -851,7 +989,6 @@
             document.getElementById("mySidenav").style.display = "none";
             document.getElementById("mySidenavRight").className = "col-xs-12";
         }
-
     }
     //打開側邊欄
     function openNav() {
@@ -879,7 +1016,6 @@
             document.getElementById("mySidenavRight").className = "col-xs-12";
             document.getElementById("openBtnSmallLeft").style.display = "block";
         }
-
     }
 
     function closeArea() {

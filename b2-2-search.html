@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light" role="navigation">
+    <nav class="navbar navbar-light bg-header" role="navigation">
         <div class="container container-CSD">
             <div class="navbar-header">
                 <h1 class="logo m-0"><a class="navbar-brand" href="index.html"><img id="logoImg" alt="全國新書資訊網logo" src="img/logo-2.png"></a></h1>
@@ -41,19 +41,19 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse wrapper-menu">
                 <!-- 主選單 -->
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li>
-                    <li><a href=""><span class="glyphicon glyphicon-bullhorn"></span>NEWS</a></li>
+                    <li><a href=""><span class="glyphicon glyphicon-home"></span>首頁</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>ISSUE<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>關注議題<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="">焦點議題 Top</a></li>
+                            <!-- <li><a href="b1-1-top.html">焦點議題 Top</a></li> -->
                             <li><a href="b2-1-search.html">議題查詢 Search</a></li>
-                            <li><a href="">議題分析 Analysis</a></li>
-                            <li><a href="b4-1-legislator.html">立委專區 Legislator</a></li>
+                            <li><a href="b3-1-maintain.html">議題維護 Maintain</a></li>
+                            <li><a href="b4-1-analysis.html">議題分析 Analysis</a></li>
+                            <li><a href="b5-1-legislator.html">立委專區 Legislator</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash"></span>R&amp;D<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash"></span>研發成果<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="">焦點成果 Top</a></li>
                             <li><a href="">成果查詢 Search</a></li>
@@ -63,8 +63,16 @@
                             
                         </ul>
                     </li>
+                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li> -->     
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>MANAGER<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>平台介紹<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">操作手冊</a></li>
+                            
+                        </ul>
+                    </li>               
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>後台管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="http://59.120.40.187/html/tdp/manage/p2.html">系統管理</a></li>
                             <li><a href="index.html">登出</a></li>
@@ -122,34 +130,38 @@
                         <div class="media-right">
                             <div class="inline-block">
                                 <a class="inline-block" href="index.html">
-                                    <span class="glyphicon glyphicon-cog"></span>
-                                </a>
+                                
+                                <span class="glyphicon glyphicon-cog"></span>
+                            </a>
                                 <a class="inline-block closebtn-smallLeft" href="javascript:void(0)" onclick="closeNav()">
-                                    <span class="glyphicon glyphicon-remove"></span>
-                                </a>
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </a>
                             </div>
                         </div>
                     </li>
                 </ul>
-                <h2 class="h2 mb-20">關注議題&nbsp;ISSUE</h2>
+                <!-- <h2 class="h2 mb-20">關注議題&nbsp;ISSUE</h2> -->
                 <ul class="nav nav-tabs tab-side">
-                    <li>
-                        <a href="b2notYet.html" class="h3" aria-controls="焦點議題">焦點議題&nbsp;Top</a>
-                    </li>
+                    <!-- <li>
+                        <a href="b1-1-top.html" class="h3" aria-controls="焦點議題">焦點議題</a>
+                    </li> -->
                     <li class="active">
-                        <a href="b2-1-search.html" class="h3" aria-controls="議題查詢">議題查詢&nbsp;Search</a>
+                        <a href="b2-1-search.html" class="h3" aria-controls="議題查詢">議題查詢</a>
                     </li>
                     <li>
-                        <a href="b2notYet.html" class="h3" aria-controls="議題分析">議題分析&nbsp;Analysis</a>
+                        <a href="b3-1-maintain.html" class="h3" aria-controls="議題維護">議題維護</a>
                     </li>
                     <li>
-                        <a href="b4-1-legislator.html" class="h3" aria-controls="立委專區">立委專區&nbsp;Legislator</a>
+                        <a href="b4-1-analysis.html" class="h3" aria-controls="議題分析">議題分析</a>
+                    </li>
+                    <li>
+                        <a href="b5-1-legislator.html" class="h3" aria-controls="立委專區">立委專區</a>
                     </li>
                 </ul>
             </div>
             <div id="mySidenavRight" class="col-xs-12 col-sm-9">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs pt-10" role="tablist">
                     <li role="presentation" class="active"><a href="#search" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">議題查詢&nbsp;Search</a></li>
                 </ul>
                 <!-- Tab panes -->
@@ -413,24 +425,6 @@
                                 </div>
                                 <div class="col-xs-12 col-lg-6">
                                     <div class="form-group col-xs-12 p-0">
-                                        <label for="focus" class="control-label col-xs-4 col-md-2 p-0">關注重點</label>
-                                        <div class="form-inline inline-block col-xs-8 col-md-10">
-                                            <select id="focus" title="focus" class="from-control col-xs-12">
-                                                <option value="全選" selected="selected">全選</option>
-                                                <option value="科部甲">重點甲</option>
-                                                <option value="科部乙">重點乙</option>
-                                                <option value="科部丙">重點丙</option>
-                                                <option value="科部丁">重點丁</option>
-                                                <option value="科部戊">重點戊</option>
-                                                <option value="科部己">重點己</option>
-                                                <option value="科部庚">重點庚</option>
-                                                <option value="科部辛">重點辛</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-6">
-                                    <div class="form-group col-xs-12 p-0">
                                         <label for="keyWords" class="control-label col-xs-4 col-md-2 p-0">關鍵字</label>
                                         <div class="form-inline inline-block col-xs-8 col-md-10">
                                             <input type="text" id="keyWords" name="" class="from-control col-xs-12">
@@ -439,103 +433,12 @@
                                 </div>
                                 <div class="col-xs-12">
                                     <a href="b2-1-search.html" role="button" class="btn btn-info pull-right">簡易查詢</a>
-                                    <a href="#searchResault" class="btn btn-info pull-right mr-10" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResault" onclick="closeArea()">查詢</a>
+                                    <a href="b2-1-1-search.html" class="btn btn-info pull-right mr-10" role="button">查詢</a>
                                 </div>
                             </div>
                         </div>
                         <!-- / row 檢索區 -->
-                        <div class="row">
-                            <div class="collapse" id="searchResault">
-                                <div class="col-xs-12 ph-20 bt">
-                                    <div class="col-xs-12 col-sm-3">
-                                        <p class="h5 inline-block">查詢結果：</p>
-                                        <p class="h5 inline-block">1234</p>
-                                        <p class="h5 inline-block">筆</p>
-                                    </div>
-                                    <div class="col-xs-12 col-sm-9">
-                                        <div class="btn-group pull-right" role="group" aria-label="First group">
-                                            <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                            <button type="button" class="btn btn-default btn-sm">1</button>
-                                            <button type="button" class="btn btn-default btn-sm">2</button>
-                                            <button type="button" class="btn btn-default btn-sm">3</button>
-                                            <button type="button" class="btn btn-default btn-sm">4</button>
-                                            <button type="button" class="btn btn-default btn-sm">&#10095;</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- / 控制選項 -->
-                                <!-- 表格開始 -->
-                                <div class="col-xs-12">
-                                    <table class="rwd-table">
-                                        <tr>
-                                            <th>年度<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                            <th>議題說明</th>
-                                            <th>議題類別</th>
-                                            <th>提案單位</th>
-                                            <th>承辦單位</th>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">100</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
-                                            <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">科技管理科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">101</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">科專計畫績效指標</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法委員洽索資料</td>
-                                            <td aria-label="提案單位" data-th="提案單位">委員會提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">科技管理科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">103</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">議題標題5G產業技術發展研究</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
-                                            <td aria-label="提案單位" data-th="提案單位">立院黨團提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">電資通光科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">103</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">專利技轉跨國效益</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">部次長承諾事項</td>
-                                            <td aria-label="提案單位" data-th="提案單位">監察院</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">科專政策科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">105</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
-                                            <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">科技管理科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">105</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">人工智慧產業科專計畫成效</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法委員洽索資料</td>
-                                            <td aria-label="提案單位" data-th="提案單位">委員會提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">創新研發科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">106</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
-                                            <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">科技管理科</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">107</td>
-                                            <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">自動車促投市場分析</a></td>
-                                            <td aria-label="議題類別" data-th="議題類別">臨時增列題庫</td>
-                                            <td aria-label="提案單位" data-th="提案單位">立院黨團提案</td>
-                                            <td aria-label="承辦單位" data-th="承辦單位"><a href="">創新研發科</a></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <!-- / 查詢結果呈現區 -->
-                        </div>
-                        <!-- / row結果呈現區的 -->
+                       
                         <div class="row" id="issueArea">
                             <div class="col-xs-12 hidden-xs panel-issueareaLg pt-20">
                                 <div class="panel panel-default col-xs-12 col-md-6 col-lg-4 b-0 bs-0">
