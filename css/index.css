@@ -24,7 +24,10 @@ border-left: 1px solid #94a5a6;
 	min-height: 100vh;
 	background: url(../img/bg-index.png),url(../img/bg-pattern.png);
 	background-repeat: no-repeat,repeat;
-	background-position: calc( 50vw - 680px) -30px, left top;
+	background-position: calc( 50vw - 680px) 0px, left top;
 }
 
+}
+.index-heigh{
+	margin-top: 10vh;
 }
