@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*臺灣地圖*/
-#TPE:hover, #NTP:hover, #KL:hover, #TY:hover, #TYC:hover, #XZ:hover, #XZC:hover, #MEW:hover, #TCC:hover, #TC:hover,
- #CHC:hover, #CH:hover, #YL:hover, #CYC:hover>path, #TNC:hover, #TN:hover, #KSC:hover>path, #PT:hover,
+#TPE:hover, #NTP:hover, #KL:hover, #TY:hover, #TYC:hover, #XZ:hover, #XZC:hover, #MEW:hover, #TCC:hover>path,
+ #CHC:hover, #CH:hover, #YL:hover, #CYC:hover>path, #TNC:hover>path, #KSC:hover>path, #PT:hover,
   #TD:hover>path, #HL:hover, #YEL:hover, #NT:hover, #L1:hover>path, #L2:hover, #L3:hover,#MZ:hover>polygon,#KM:hover>path{
         cursor: pointer;
         fill: #18BC9C !important;
