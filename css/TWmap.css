@@ -1,31 +1,97 @@
 @charset "UTF-8";
+
 /*臺灣地圖*/
-#TPE:hover, #NTP:hover, #KL:hover, #TY:hover, #TYC:hover, #XZ:hover, #XZC:hover, #MEW:hover, #TCC:hover>path,
- #CHC:hover, #CH:hover, #YL:hover, #CYC:hover>path, #TNC:hover>path, #KSC:hover>path, #PT:hover,
-  #TD:hover>path, #HL:hover, #YEL:hover, #NT:hover, #L1:hover>path, #L2:hover, #L3:hover,#MZ:hover>polygon,#KM:hover>path{
-        cursor: pointer;
-        fill: #18BC9C !important;
-    }
-@media screen and (max-width: 767px) {
-#TWmap{
-	width: 100%;
-	height: auto;
+
+#TPE:hover,
+#NTP:hover,
+#KL:hover,
+#TY:hover,
+#TYC:hover,
+#XZ:hover,
+#XZC:hover,
+#MEW:hover,
+#TCC:hover>path,
+#CHC:hover,
+#CH:hover,
+#YL:hover,
+#CYC:hover>path,
+#TNC:hover>path,
+#KSC:hover>path,
+#PT:hover,
+#TD:hover>path,
+#HL:hover,
+#YEL:hover,
+#NT:hover,
+#L1:hover>path,
+#L2:hover,
+#L3:hover,
+#MZ:hover>polygon,
+#KM:hover>path,
+#OR:hover>circle,
+#NO:hover>circle {
+    cursor: pointer;
+    fill: #18BC9C !important;
 }
 
+#OR:hover>text,
+#NO:hover>text {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#TPE:active,
+#NTP:active,
+#KL:active,
+#TY:active,
+#TYC:active,
+#XZ:active,
+#XZC:active,
+#MEW:active,
+#TCC:active>path,
+#CHC:active,
+#CH:active,
+#YL:active,
+#CYC:active>path,
+#TNC:active>path,
+#KSC:active>path,
+#PT:active,
+#TD:active>path,
+#HL:active,
+#YEL:active,
+#NT:active,
+#L1:active>path,
+#L2:active,
+#L3:active,
+#MZ:active>polygon,
+#KM:active>path,
+#OR:active>circle,
+#NO:active>circle {
+    cursor: pointer;
+    fill: #128f76 !important;
+}
+
+#OR:active>text,
+#NO:active>text {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+@media screen and (max-width: 767px) {
+    #TWmap {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
 @media (min-width: 767px) {
-#TWmap{
-	width: 66.66666667%;
-	height: auto;
-	float: left;
+    #TWmap {
+        width: 66.66666667%;
+        height: auto;
+        float: left;
+    }
 }
 
-}
-@media (min-width: 992px) {
+@media (min-width: 992px) {}
 
-}
-@media (min-width: 1200px) {
-	
-}
+@media (min-width: 1200px) {}

@@ -308,7 +308,6 @@ img.politicalParty-card{
     padding: 10px;
 }
 
-
 /*議題瀏覽 中大尺寸panel 超過滾動*/
 
 .panel-bodyScrollY {
@@ -414,7 +413,10 @@ img.politicalParty-card{
 .color-deep {
     color: #2C3E50;
 }
-
+.badge-light {
+    color: #212529;
+    background-color: #ecf0f1;
+}
 .navbar-nav>li>a {
     color: #2C3E50;
 }
@@ -552,7 +554,9 @@ img.politicalParty-card{
 }
 
 
-
+.width-full{
+    width: 100%;
+}
 
 
 /*側邊開闔的RWD導覽列*/
