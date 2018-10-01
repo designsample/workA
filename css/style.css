@@ -273,7 +273,14 @@ img.politicalParty-card{
 .border-secondary {
     border-color: #95a5a6 !important;
 }
-
+.progress .progress-bar {
+    font-size: 18px;
+    line-height: 20px;
+}
+.progress{
+    height: 20px;
+    
+}
 .card {
 
     position: relative;
