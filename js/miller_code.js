@@ -55,7 +55,7 @@ function openCitymotherChild(TargetIDClassGroup, TargetID, TargetSpanID) {
 
 //on scroll 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -64,9 +64,17 @@ function scrollFunction() {
         document.getElementById("goTop").style.display = "none";
     }
 }
+//Scroll to Top 動畫速度
+$(function() {
+    // 幫 a.abgne_gotoheader 加上 click 事件
+    $('a.abgne_gotoheader').click(function() {
+        // 讓捲軸用動畫的方式移動到 0 的位置
+        // 感謝網友 sam 修正 Opera 問題
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+        $body.animate({
+            scrollTop: 0
+        }, 800); //800滾動速度，大等於慢
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+        return false;
+    });
+});
