@@ -164,12 +164,26 @@
                                 <h4 class="h4">黨團查詢</h4>
                             </div>
                             <div class="col-xs-12">
-                                <div class="col-xs-12 col-lg-5">
+                                <div class="col-xs-12 col-lg-12">
                                     <div class="form-group col-xs-12 p-0">
-                                        <label for="yearA" class="control-label col-xs-4 p-0">屆次</label>
-                                        <div id="yearA" class="form-inline inline-block col-xs-8">
-                                            <select class="from-control col-xs-12">
-                                                <option value="9">9</option>
+                                        <label for="yearA" class="control-label col-xs-4 col-md-2 p-0">屆次</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-4">
+                                            <select title="yearA" class="from-control col-xs-12 col-md-5">
+                                                <option value="9" selected="selected">9</option>
+                                                <option value="8">8</option>
+                                                <option value="7">7</option>
+                                                <option value="6">6</option>
+                                                <option value="5">5</option>
+                                                <option value="4">4</option>
+                                                <option value="3">3</option>
+                                                <option value="2">2</option>
+                                                <option value="1">1</option>
+                                            </select>
+                                            <div class="form-inline inline-block text-center col-xs-12 col-md-2">
+                                                <label class="">~</label>
+                                            </div>
+                                            <select title="yearB" class="from-control col-xs-12 col-md-5">
+                                                <option value="9" selected="selected">9</option>
                                                 <option value="8">8</option>
                                                 <option value="7">7</option>
                                                 <option value="6">6</option>
@@ -182,7 +196,23 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-lg-7 pull-right">
+                                <div class="col-xs-12 col-lg-12">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="issueType" class="control-label col-xs-4 col-md-2 p-0">議題類別</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10">
+                                            <div class="form-group"><input type="checkbox" id="c1" title="全選"><label for="c1" class="">全選</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c2" title="國會輿情"><label for="c2" class="">國會輿情</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c3" title="臨時增列題庫"><label for="c3" class="">臨時增列題庫</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c4" title="立法院模擬題庫"><label for="c4" class="">立法院模擬題庫</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c5" title="部次長承諾事項"><label for="c5" class="">部次長承諾事項</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c6" title="委員會臨時提案"><label for="c6" class="">委員會臨時提案</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c7" title="立法委員請託事項"><label for="c7" class="">立法委員請託事項</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c8" title="立法委員洽索資料"><label for="c8" class="">立法委員洽索資料</label></div>
+                                            <div class="form-group"><input type="checkbox" id="c9" title="預算相關議題"><label for="c9" class="">預算相關議題</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 pull-right">
                                     <a href="#searchResaultA" class="btn btn-info pull-right mr-10" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResaultA">查詢</a>
                                 </div>
                             </div>
@@ -192,46 +222,765 @@
                             <div class="collapse" id="searchResaultA">
                                 <div class="col-xs-12 pv-20 bt">
                                     <div class="col-xs-12">
-                                        <p class=" inline-block ">查詢條件：”</p>
+                                        <p class=" inline-block ">查詢條件：“</p>
                                         <p class="h5 inline-block text-info">第九屆</p>
-                                        <p class=" inline-block ">“</p>
+                                        <p class=" inline-block ">”，“</p>
+                                        <p class="h5 inline-block text-info">所有議題類別</p>
+                                        <p class=" inline-block ">”</p>
                                     </div>
                                     <!-- / 查詢條件 -->
                                 </div>
                                 <!-- / 控制選項 -->
                                 <div class="col-xs-12 mt-20 img-searchCommittee">
                                     <div class="col-xs-12 p-0">
-                                        <a href="" class="h4 col-xs-12 col-sm-4 col-lg-3">民主進步黨</a>
-                                        <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
-                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                                <span class="">600筆關注議題</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 p-0">
-                                        <a href="" class="h4 col-xs-12 col-sm-4 col-lg-3">時代力量</a>
+                                        <a href="#progress_1" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_1" class="h4 col-xs-12 col-sm-4 col-lg-3">民主進步黨</a>
                                         <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
                                             <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                                 <span class="">800筆關注議題</span>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="collapse" id="progress_1">
+                                        <div class="row">
+                                            
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">吳思瑤</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">姚文智</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="9" aria-valuemin="0" aria-valuemax="100" style="width: 9%">
+                                                        <span class="">75筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">呂孫綾</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="width: 8%">
+                                                        <span class="">68筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林淑芬</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100" style="width: 7%">
+                                                        <span class="">60筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">高志鵬</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="6" aria-valuemin="0" aria-valuemax="100" style="width: 6%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">吳秉叡</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蘇巧慧</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">張宏陸</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">羅致政</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">江永昌</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">吳琪銘</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">鄭運鵬</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳賴素美</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">鄭寶清</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蔡其昌</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">張廖萬堅</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">萬國書</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">何欣純</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">葉宜津</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">黃偉哲</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳亭妃</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林俊憲</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">王定宇</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">邱議瑩</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">邱志偉</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">劉世芳</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林岱樺</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">管碧玲</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">李昆澤</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">趙天麟</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">許智傑</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">賴瑞隆</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蔡適應</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳歐珀</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">柯建銘</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">黃秀芳</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">洪宗熠</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳素月</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蘇治芬</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">劉建國</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">李俊俋</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蔡易餘</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳明文</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蘇震清</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+                                                        <span class="">7筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">鍾佳濱</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">莊瑞雄</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蕭美琴</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">劉櫂豪</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">楊曜</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳瑩</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+                                                        <span class="">8筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--/ 民進黨-->
                                     <div class="col-xs-12 p-0">
-                                        <a href="" class="h4 col-xs-12 col-sm-4 col-lg-3">中國國民黨</a>
+                                        <a href="#progress_2" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_2" class="h4 col-xs-12 col-sm-4 col-lg-3">中國國民黨</a>
                                         <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
-                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                                <span class="">400筆關注議題</span>
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="">600筆關注議題</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="progress_2">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蔣萬安</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">李彥秀</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">蔣乃辛</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">費鴻泰</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">賴士葆</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林德福</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">羅明才</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳學聖</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">呂玉玲</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">顏寬恆</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">盧秀燕</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">江啟臣</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林為洲</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳超明</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">徐志榮</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">王惠美</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">馬文君</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">許淑華</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">楊鎮浯</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳雪生</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">鄭天財(Sra•Kacaw)</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">廖國棟(Sufin•Siluko)</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">孔文吉</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">簡東明(Uliw•Qaljupayare)</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                                        <span class="">80筆關注議題</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
-                                        <a href="" class="h4 col-xs-12 col-sm-4 col-lg-3">親民黨</a>
+                                        <a href="#progress_3" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_3" class="h4 col-xs-12 col-sm-4 col-lg-3">時代力量</a>
+                                        <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
+                                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                <span class="">600筆關注議題</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="progress_3">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">林昶佐</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">200筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">黃國昌</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">200筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">洪慈庸</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">200筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">高潞•以用•巴魕剌(Kawlo•Iyun•Pacidal)</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">200筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">徐永明</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">200筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <a href="#progress_4" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_4" class="h4 col-xs-12 col-sm-4 col-lg-3">親民黨</a>
                                         <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
                                             <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
                                                 <span class="">200筆關注議題</span>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="collapse" id="progress_4">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">李鴻鈞</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">20筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">陳怡潔</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">20筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">周陳秀霞</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="33.3" aria-valuemin="0" aria-valuemax="100" style="width: 33.3%">
+                                                        <span class="">20筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 親民黨 -->
+                                    <div class="col-xs-12 p-0">
+                                        <a href="#progress_5" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_5" class="h4 col-xs-12 col-sm-4 col-lg-3">無黨團結聯盟</a>
+                                        <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%">
+                                                <span class="">1筆關注議題</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="progress_5">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">高金素梅</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                        <span class="">1筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 無黨團結聯盟 -->
+                                    <div class="col-xs-12 p-0">
+                                        <a href="#progress_6" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="progress_6" class="h4 col-xs-12 col-sm-4 col-lg-3">無黨籍</a>
+                                        <div class="progress col-xs-12 col-sm-8 col-lg-9 p-0">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%">
+                                                <span class="">3筆關注議題</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="collapse" id="progress_6">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <a href="b5-2-legislator.html" class="col-xs-12 col-sm-3 col-lg-3">趙正宇</a>
+                                                <div class="progress col-xs-12 col-sm-9 col-lg-9 p-0">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                                                        <span class="">3筆關注議題</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- / 無黨籍 -->
                                     <!-- / 圖表 -->
                                 </div>
                             </div>
