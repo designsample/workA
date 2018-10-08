@@ -2,29 +2,29 @@
 
 /*臺灣地圖*/
 
-#TPE:hover,
-#NTP:hover,
-#KL:hover,
-#TY:hover,
-#TYC:hover,
-#XZ:hover,
-#XZC:hover,
-#MEW:hover,
+#TPE:hover>path,
+#NTP:hover>path,
+#KL:hover>path,
+#TYC:hover>path,
+#XZ:hover>path,
+#XZC:hover>path,
+#MEW:hover>path,
 #TCC:hover>path,
-#CHC:hover,
-#CH:hover,
-#YL:hover,
+#CHC:hover>path,
+#CH:hover>path,
+#YL:hover>path,
 #CYC:hover>path,
+#CY:hover>path,
 #TNC:hover>path,
 #KSC:hover>path,
-#PT:hover,
+#PT:hover>path,
 #TD:hover>path,
-#HL:hover,
-#YEL:hover,
-#NT:hover,
+#HL:hover>path,
+#YEL:hover>path,
+#NT:hover>path,
 #L1:hover>path,
-#L2:hover,
-#L3:hover,
+#L2:hover>path,
+#L3:hover>path,
 #MZ:hover>polygon,
 #KM:hover>path,
 #OR:hover>circle,
@@ -38,26 +38,27 @@
     cursor: pointer;
     text-decoration: underline;
 }
-#TPE:active,
-#NTP:active,
-#KL:active,
-#TY:active,
-#TYC:active,
-#XZ:active,
-#XZC:active,
-#MEW:active,
+#TPE:active>path,
+#NTP:active>path,
+#KL:active>path,
+#TY:active>path,
+#TYC:active>path,
+#XZ:active>path,
+#XZC:active>path,
+#MEW:active>path,
 #TCC:active>path,
-#CHC:active,
-#CH:active,
-#YL:active,
+#CHC:active>path,
+#CH:active>path,
+#YL:active>path,
+#CY:active>path,
 #CYC:active>path,
 #TNC:active>path,
 #KSC:active>path,
-#PT:active,
+#PT:active>path,
 #TD:active>path,
-#HL:active,
-#YEL:active,
-#NT:active,
+#HL:active>path,
+#YEL:active>path,
+#NT:active>path,
 #L1:active>path,
 #L2:active,
 #L3:active,
@@ -68,12 +69,16 @@
     cursor: pointer;
     fill: #128f76 !important;
 }
-
-#OR:active>text,
-#NO:active>text {
+[id^="T_"]{
+    cursor: pointer;
+    fill: #2C3E50;
+    font-size: 18px;
+}
+[id^="T_"]:hover{
     cursor: pointer;
     text-decoration: underline;
-    color: black;
+    fill: black;
+    font-size: 18px;
 }
 
 @media screen and (max-width: 767px) {
@@ -81,6 +86,16 @@
         width: 100%;
         height: auto;
     }
+    [id^="T_"]{
+    font-size: 28px;
+    fill: #2C3E50;
+}
+[id^="T_"]:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    fill: black;
+    font-size: 28px;
+}
 }
 
 
