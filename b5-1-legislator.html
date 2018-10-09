@@ -181,7 +181,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                                 <div class="col-xs-12 col-lg-5">
                                     <div class="form-group col-xs-12 p-0">
                                         <label for="legislatorA" class="control-label col-xs-4 p-0">提案委員</label>
@@ -191,10 +190,10 @@
                                                     $('.myselect').chosen();
                                                 });
                                                 $(function(){
-    $('.myselect').chosen({
-        search_contains: true
-    });
-});
+                                                    $('.myselect').chosen({
+                                                        search_contains: true
+                                                    });
+                                                });
                                             </script>
                                             <select data-placeholder="輸入姓名，可複選" id="myselect" class="from-control col-xs-12 myselect" multiple data-no-results-text="'沒有符合的資料..'">
                                                 <!-- <option value="全選" selected="selected">全選</option> -->
@@ -312,13 +311,9 @@
                                                 <option value="簡東明">簡東明</option>
                                                 <option value="孔文吉">孔文吉</option>
                                             </select>
-
                                         </div>
                                     </div>
                                 </div>
-                               
-                                
-                                
                                 <div class="col-xs-12 col-lg-2">
                                     <a href="#searchResault" class="btn btn-info pull-right mr-10" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResault">查詢</a>
                                 </div>
@@ -347,8 +342,6 @@
                                                     <img class="politicalParty-card img-round" src="img/PartyLogo_dpp.png" alt="無黨籍">
                                                     <div class="card-body text-center">
                                                         <a class="card-title text-center h4" href="https://www.ly.gov.tw/Pages/List.aspx?nodeid=1919" target="_blank">蘇嘉全&emsp;立委</a>
-                                                        
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -493,7 +486,6 @@
     </footer>
     <!-- 搜尋框標籤效果 -->
     <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
-
     <script>
     //一載入頁面就判定：是否打開側邊欄
     window.onload = sideMenuOpen();
