@@ -14,7 +14,7 @@
     <!--     <link rel="stylesheet" href="css/docs.theme.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/partyBadge.css">
-    <!-- <link rel="stylesheet" href="css/chosen.css"> -->
+    <link rel="stylesheet" href="css/chosen.css">
     <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -159,7 +159,7 @@
                                 <h4 class="h4">立委查詢</h4>
                             </div>
                             <div class="col-xs-12">
-                                <div class="col-xs-12 col-lg-5">
+                                <!-- <div class="col-xs-12 col-lg-5">
                                     <div class="form-group col-xs-12 p-0">
                                         <label for="yearA" class="control-label col-xs-4 p-0">屆次</label>
                                         <div id="yearA" class="form-inline inline-block col-xs-8">
@@ -176,8 +176,8 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- <div class="col-xs-12 col-lg-5">
+                                </div> -->
+                                <div class="col-xs-12 col-lg-5">
                                     <div class="form-group col-xs-12 p-0">
                                         <label for="legislatorA" class="control-label col-xs-4 p-0">提案委員</label>
                                         <div id="legislatorA" class="form-inline inline-block col-xs-8">
@@ -194,8 +194,8 @@
                                                 });
                                                 });
                                             </script>
-                                            <select data-placeholder="輸入姓名，可複選" id="myselect" class="from-control col-xs-12 myselect" multiple >
-                                                <option value="全選">全選</option>
+                                            <select data-placeholder="輸入姓名" id="myselect" class="from-control col-xs-12 myselect" >
+                                                <option value="選擇或輸入姓名">選擇或輸入姓名</option>
                                                 <option value="吳思瑤">吳思瑤</option>
                                                 <option value="姚文智">姚文智</option>
                                                 <option value="蔣萬安">蔣萬安</option>
@@ -312,7 +312,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
                                 <div class="col-xs-12 col-lg-7">
                                     <a href="#searchResault" class="btn btn-info pull-right mr-10" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResault">查詢</a>
                                 </div>
@@ -485,8 +485,8 @@
             <a id="openBtnSmallLeft" class="closebtn hidden-xs" href="javascript:void(0)" onclick="openNav()"><span class="glyphicon glyphicon-arrow-right"></span>打開側邊欄</a>
         </div>
     </footer>
-    <!-- 搜尋框標籤效果 
-    <script src="js/chosen.jquery.min.js" type="text/javascript"></script>-->
+    <!-- 搜尋框標籤效果 -->
+    <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
     <script>
     //一載入頁面就判定：是否打開側邊欄
     window.onload = sideMenuOpen();
