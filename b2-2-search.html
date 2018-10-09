@@ -12,7 +12,6 @@
     <meta name="description" content="法人科專資訊整合平台" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--     <link rel="stylesheet" href="css/docs.theme.min.css"> -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/chosen.css">
     <!--[if lt IE 9]>
@@ -20,10 +19,8 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="js/jquery.min.js"></script>
-    <!-- <script src="js/jquery.min 2.js"></script> -->
     <!--js順序有差要注意-->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
     <script src="js/miller_code.js"></script>
 </head>
 
@@ -248,10 +245,13 @@
                                                     $('.myselect').chosen({
                                                         search_contains: true
                                                     });
+                                                    $(".myselect").chosen({
+                                                    search_contains: true,
+                                                });
                                                 });
                                             </script>
-                                            <select data-placeholder="輸入姓名，可複選" id="myselect" class="from-control col-xs-12 myselect" multiple data-no-results-text="'沒有符合的資料..'">
-                                                <!-- <option value="全選" selected="selected">全選</option> -->
+                                            <select data-placeholder="輸入姓名，可複選" id="myselect" class="from-control col-xs-12 myselect" multiple >
+                                                <option value="全選">全選</option>
                                                 <option value="吳思瑤">吳思瑤</option>
                                                 <option value="姚文智">姚文智</option>
                                                 <option value="蔣萬安">蔣萬安</option>
