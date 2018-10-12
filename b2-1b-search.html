@@ -126,71 +126,91 @@
                     </li>
                 </ul>
             </div>
-            <div id="mySidenavRight" class="col-xs-12 col-sm-9">
-                <div class="tabSearchArea">
-                <ul class="nav nav-tabs pt-10" role="tablist">
-                    <li role="presentation" class="active"><a href="#search" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">議題查詢</a></li>
-                </ul>
-                <!-- Tab panes -->
-                <div class="tab-content tab-sideContentSec">
-                    <div role="tabpanel" class="tab-pane active" id="search">
-                        <div class="row pb-20">
-                            <div class="col-xs-12">
-                                <div class="col-xs-12 col-lg-6">
-                                    <div class="form-group col-xs-12 p-0">
-                                        <label class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題年度</label>
-                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
-                                            <select title="yearA" class="from-control col-xs-12 col-md-5">
-                                                <option value="96">96</option>
-                                                <option value="97">97</option>
-                                                <option value="98">98</option>
-                                                <option value="99">99</option>
-                                                <option value="100">100</option>
-                                                <option value="101">101</option>
-                                                <option value="102">102</option>
-                                                <option value="103">103</option>
-                                                <option value="104">104</option>
-                                                <option value="105">105</option>
-                                                <option value="106" selected="selected">106</option>
-                                            </select>
-                                            <div class="form-inline inline-block text-center col-xs-12 col-md-2">
-                                                <label class="">~</label>
-                                            </div>
-                                            <select title="yearB" class="from-control col-xs-12 col-md-5">
-                                                <option value="96">96</option>
-                                                <option value="97">97</option>
-                                                <option value="98">98</option>
-                                                <option value="99">99</option>
-                                                <option value="100">100</option>
-                                                <option value="101">101</option>
-                                                <option value="102">102</option>
-                                                <option value="103">103</option>
-                                                <option value="104">104</option>
-                                                <option value="105">105</option>
-                                                <option value="106" selected="selected">106</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 col-lg-6">
-                                    <div class="form-group col-xs-12 p-0">
-                                        <label for="keyWords" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">查詢字串</label>
-                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
-                                            <input type="text" id="keywords" name="" class="from-control col-xs-12 p-0">
-                                        </div>
-                                    </div>
-                                </div>
+            <div id="mySidenavRight" class="col-xs-12 ph-0">
+                <div class="searchArea2">
+                    <div class="tabSearchArea2">
+                    <ul class="nav nav-tabs col-lg-6 col-lg-offset-3 mb-20" role="tablist">
+                        <li role="presentation" class="active"><a href="#search" aria-controls="議題查詢" role="tab" data-toggle="tab" class="h3">議題查詢</a></li>
+                        <li role="presentation" class=""><a href="#search" aria-controls="立委專區" role="tab" data-toggle="tab" class="h3">立委專區</a></li>
+                        <li role="presentation" class=""><a href="#search" aria-controls="議題分析" role="tab" data-toggle="tab" class="h3">議題分析</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-sideContentSec searchArea-group">
+                        <div role="tabpanel" class="tab-pane active" id="search">
+                            <div class="row pb-20">
                                 <div class="col-xs-12">
-                                    <a href="b2-2-search.html" role="button" class="btn btn-info pull-right">進階查詢</a>
-                                    <a href="b2-1-1-search.html" class="btn btn-info pull-right mr-10" role="button">查詢</a>
+                                    <div class="col-lg-6 col-lg-offset-3">
+                                        
+                                        <div class="col-xs-12">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="" placeholder="輸入欲查詢內容">
+                                                <div class="input-group-btn">
+                                                    <a data-toggle="popover" class="btn-group btn" data-container="body" data-placement="bottom" type="button" role="button" data-html="true" href="#" id="login">年份<span class="glyphicon glyphicon-chevron-down" style="margin:3px 0 0 0"></span></a>
+                                                    <a href="b2-1-1-search.html" class="btn btn-info btn-group" role="button">查詢</a>
+                                                </div>
+                                            </div>
+
+                                            <div id="popover-content-login" class="hide">
+                                                <ul class="list-group list-group-nonestyle">
+                                                    <li class="list-group-item">年份</li>
+                                                    <li class="list-group-item">
+                                                        <select title="yearB" class="from-control inline-block">
+                                                            <option value="0" selected="selected">&emsp;&emsp;無&emsp;&emsp;</option>
+                                                            <option value="9">99</option>
+                                                            <option value="8">98</option>
+                                                            <option value="7">100</option>
+                                                            <option value="6">101</option>
+                                                            <option value="5">102</option>
+                                                            <option value="4">103</option>
+                                                            <option value="3">104</option>
+                                                            <option value="2">105</option>
+                                                            <option value="1">106</option>
+                                                        </select>
+                                                        <p class="inline-block">到</p>
+                                                        <select title="yearB" class="from-control inline-block">
+                                                            <option value="0" selected="selected">&emsp;&emsp;無&emsp;&emsp;</option>
+                                                            <option value="9">99</option>
+                                                            <option value="8">98</option>
+                                                            <option value="7">100</option>
+                                                            <option value="6">101</option>
+                                                            <option value="5">102</option>
+                                                            <option value="4">103</option>
+                                                            <option value="3">104</option>
+                                                            <option value="2">105</option>
+                                                            <option value="1">106</option>
+                                                        </select>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-xs-12 p-0">
+                                            <a href="b2-1-1-search.html" class="btn btn-info pull-right mr-10" role="button">查詢</a>
+                                        </div> -->
                                 </div>
                             </div>
+                            <!-- / row -->
                         </div>
-                        <!-- / row -->
+                        <!-- / tabpanel -->
                     </div>
-                    <!-- / tabpanel -->
                 </div>
+                </div>
+                
             </div>
+            <script type="text/javascript">
+            $("[data-toggle=popover]").each(function(i, obj) {
+
+                $(this).popover({
+                    html: true,
+                    content: function() {
+                        var id = $(this).attr('id')
+                        return $('#popover-content-' + id).html();
+                    }
+                });
+
+            });
+            </script>
             <!-- / tab search area -->
             <div class="row">
                 <div class="collapse" id="searchResault">
@@ -701,17 +721,18 @@
         </div>
     </footer>
     <script>
+    //  不要側邊欄
     //一載入頁面就判定：是否打開側邊欄
     window.onload = sideMenuOpen();
 
     function sideMenuOpen() {
         var w = window.outerWidth;
         if (document.body.width > 767 || w > 767) {
-            document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-sm-9 ph-0";
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("mySidenavRight").className = "col-xs-12 ph-0";
         } else {
             document.getElementById("mySidenav").style.display = "none";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
+            document.getElementById("mySidenavRight").className = "col-xs-12 ph-0";
         }
 
     }
@@ -720,11 +741,11 @@
         var w = window.outerWidth;
         if (document.body.width > 767 || w > 767) {
             document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-sm-9 ph-0";
+            document.getElementById("mySidenavRight").className = "col-xs-12 ph-0";
             document.getElementById("openBtnSmallLeft").style.display = "none";
         } else {
             document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
+            document.getElementById("mySidenavRight").className = "col-xs-12 ph-0";
             document.getElementById("openBtnSmallLeft").style.display = "none";
         }
     }
@@ -735,11 +756,11 @@
         if (document.body.width > 767 || w > 767) {
             document.getElementById("mySidenav").style.display = "none";
             document.getElementById("mySidenavRight").className = "col-xs-12";
-            document.getElementById("openBtnSmallLeft").style.display = "block";
+            document.getElementById("openBtnSmallLeft").style.display = "none";
         } else {
             document.getElementById("mySidenav").style.display = "none";
             document.getElementById("mySidenavRight").className = "col-xs-12";
-            document.getElementById("openBtnSmallLeft").style.display = "block";
+            document.getElementById("openBtnSmallLeft").style.display = "none";
         }
 
     }
@@ -749,7 +770,7 @@
         if (Target.style.display != "none") {
             Target.style.display = "none"
         } else {
-            Target.style.display = "block"
+            Target.style.display = "none"
         }
     }
     </script>
