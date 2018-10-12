@@ -2,12 +2,12 @@
 
 /*For All*/
 
-* {
+*,label {
     font-size: 18px;
     font-family: "WenQuanYi Zen Hei", "文泉驛正黑", "Heiti TC", "黑體-繁", "LiHei Pro", "儷黑 Pro", "PingFang TC", "Droid Sans", "Roboto", "Microsoft JhengHei", "微軟正黑體";
 }
 
-
+.form-group select {height: 31px;}
 /*[設定]整體----------*/
 
 
@@ -16,6 +16,7 @@
 nav {
     box-shadow: 0px 2px 8px #00000024;
     border-radius: 0;
+    z-index: 999;
 }
 
 .container-CSD {
@@ -35,7 +36,7 @@ nav {
 }
 
 .font-sizeGroup {
-    padding-top: 40%;
+    padding-top: 36px;
 }
 
 
@@ -207,8 +208,83 @@ nav {
 .tab-sideContentSec {
     padding-top: 30px;
 }
+.searchArea2{
+    margin-bottom: 20px;
+}
+.tabSearchArea2{
+    width: 100%;
+}
+.tabSearchArea2 {
+    box-shadow: 0px 2px 8px #00000045;
+    background: #E3E2DE;
+    padding: 40px 15px;
+    margin-bottom: 15px;
+}
+.tabSearchArea2>.nav-tabs {
+    border-bottom: 1px solid #8a6d3b;
+}
+.tabSearchArea2>.nav-tabs>li.active>a, .tabSearchArea2>.nav-tabs>li.active>a:hover, .tabSearchArea2>.nav-tabs>li.active>a:focus{
+    color: #98253E;
+    background-color: #fff0;
+    border: 1px solid #8a6d3b;
+    border-bottom-color: #e3e2de;/*transparent*/
+    cursor: default;
+    text-shadow: 1px 1px 14px #fff;
+}
 
+.tabSearchArea {
+    width: 100%;
+    box-shadow: 0px 2px 8px #00000045;
+    background: #E3E2DE;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+.tabSearchArea>.nav-tabs {
+    border-bottom: 1px solid #8a6d3b;
+}
+.tabSearchArea>.nav-tabs>li.active>a, .tabSearchArea>.nav-tabs>li.active>a:hover, .tabSearchArea>.nav-tabs>li.active>a:focus{
+    color: #98253E;
+    background-color: #fff0;
+    border: 1px solid #8a6d3b;
+    border-bottom-color: #e3e2de;/*transparent*/
+    cursor: default;
+    text-shadow: 1px 1px 14px #fff;
+}
 
+.input-group-btn:last-child>.a, .input-group-btn:last-child>.btn-group{
+    z-index: 2;
+    margin-left: -1px;
+}
+.searchArea-group .input-group input, .searchArea-group .input-group .input-group-btn a{
+    font-size: 18px;
+    padding: 12px 24px;
+    line-height: 2em;
+    height: 62px;
+}
+.searchArea-group .input-group .input-group-btn a:first-child{
+    border: 1px solid #ccc;
+    background: #fff;
+
+}
+.list-group-nonestyle{
+    margin-bottom: 0;
+    list-style: none;
+}
+.list-group-nonestyle li.list-group-item{
+    list-style: none;
+    border:none;
+}
+.popover{
+    max-width:max-content;
+    max-width: max-content;
+    width: auto;
+}
+.popover-content{
+    max-width:max-content;
+    max-width: max-content;
+    width: auto;
+}
 /*img圖片照片樣式*/
 
 .img-round {
@@ -316,11 +392,11 @@ img.politicalParty-card{
     padding: 10px;
 }
 .issueCard>.card-header{
-background: #2C3E50;
+/*background: #2C3E50;*/
     padding: 15px 10px;
 }
 .issueCard>.card-header a{
-color: #fff;
+/*color: #fff;*/
 }
 .issueCard>.card-body{
     min-height: 18em;
@@ -493,7 +569,10 @@ color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+.ph-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
 .ph-5 {
     padding-left: 5px;
     padding-right: 5px;
@@ -571,7 +650,10 @@ color: #fff;
 .mb-40 {
     margin-bottom: 40px;
 }
-
+.mh-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .mh-10 {
     margin-left: 10px;
     margin-right: 10px;
@@ -638,16 +720,7 @@ color: #fff;
 
 @media screen and (max-width: 767px) {
     .container-CSD>.navbar-header {
-        background: #d5cea6;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=1);
-        /* IE6-9 */
+        background: #F9F8F4;
     }
     .navbar-brand {
         padding: 10px 15px;
@@ -718,6 +791,9 @@ color: #fff;
     #mySidenav{
         display: none !important;
     }
+    .tabSearchArea {
+    margin-top: 15px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -752,17 +828,7 @@ color: #fff;
         margin-bottom: 7px;
     }
     .container-CSD {
-        background: #d5cea6;
-        /* Old browsers */
-        background: url(../img/bg-pattern4.png) no-repeat right, -moz-linear-gradient(left, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* FF3.6-15 */
-        background: url(../img/bg-pattern4.png) no-repeat right, -webkit-linear-gradient(left, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: url(../img/bg-pattern4.png) no-repeat right, linear-gradient(to right, #d5cea6 0%, #c9c190 40%, #b7ad70 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        background-size: auto 100%, auto;
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70', GradientType=1);
-        /* IE6-9 */
+        background: #F9F8F4;
     }
 }
 @keyframes CC {
